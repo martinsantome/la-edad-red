@@ -1,3 +1,5 @@
+DISCONTINUADO: SIGUE: https://notabug.org/aleph/LaKurrealidad
+
 Versión galeradas (en proceso)
 https://teatredefum.github.io/la-edad-red/
 
