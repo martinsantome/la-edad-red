@@ -1,0 +1,60 @@
+<title>CommandLine -- /LineMode</title>
+<nextid 8="">
+<h1>Command line syntax</h1>The syntax is:
+<xmp>
+		www [options]  [docaddress [keywords]]
+
+</xmp>With no arguments, the <a name="1" href="QuickGuide.html">www</a> shell command allows you to browse from
+the system default page, /usr/local/lib/WWW/default.html.<p>
+Options should be specified before other arguments. Currently available
+options are:-
+<dl>
+<dt>-n 
+<dd>Non-interactive mode.  Outputs the formatted document to the standard
+output, then exits.  Pages are delimited with form feed (FF) characters.
+<dt><a name="4">-</a>
+<dd> A minus sign with no trailing characters indicates that the program
+will accept <a name="3" href="../../MarkUp/MarkUp.html">HTML format</a> input from the standard input. This allows
+www to be used as a filter from html to plain text for example. Relative
+links in the input are parsed as though the address of the document
+was that of the home page (or  docaddress if specified).  Implies
+non-interactive mode.
+<dt><a name="7">-listrefs</a>
+<dd> Implies non-interactive. Adds a list of the addresses of
+all documents references to the end.
+<dt>-pn
+<dd> where n is a number, specifies the page length. Without a number,
+makes the page length infinite. Default is 24. 
+<dt><a name="5">-source</a>
+<dd> Display the original source of a document instead of parsing
+it. Has effect for HTML from w3 servers, and news articles. (v1.2a
+or later)
+<dt>-v
+<dd> Verbose mode: Gives a running commentary on the program's attempts
+to read data in various ways.
+<dt>-wn
+<dd> where n is a number, specifies the page width in columns. The
+default is 78, 79 or 80 depending on the system. (v1.0 or later)
+<dt>-na
+<dd> Hides anchor positions in the text. Useful, when printing out
+the document.
+<dt><a name="2">-a  format</a>
+<dd> Specifies the printf-style format string to be used when
+printing references. Must contain the two characters "%d" where the
+numbers should occur.  Be sure to escape or quote any special characters
+you use.  For example under unix:
+</dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dl>
+
+<xmp>
+				www -a \<%d\>
+				www -a " (Type %d)"
+
+</%d\></xmp>If present, the next argument (docaddress) is the<a name="6" href="../../Addressing/Addressing.html"> hypertext address</a>
+, of  the document at which you want to start browsing. You may want
+to define an alias for www followed by name of your favourite index.</p><p>
+Any further command line arguments are taken as keywords. The first
+argument must refer to an index in this case. The index is searched
+for entries matching the keywords, and a list of matching entries
+is displayed.
+<address><a name="0" href="../../../TBL_Disclaimer.html">Tim BL</a>
+</address></p></nextid>

@@ -1,0 +1,13 @@
+<title>GlobalV -- /Defaults</title>
+<nextid 1="">
+<h1>Global Variables under VM/CMS</h1>(These are the equivalent of <a name="0" href="EnvVariables.html">environment variables</a> under unix.)<p>
+ A particular GLOBALV table (CENV) is used to hold the C environment.
+The command to set a variable VVVV to a value XXXX is
+<xmp>		GLOBALV SELECT CENV SET VVVV XXXX
+
+</xmp>for example
+<xmp>		GLOBALV SELECT CENV SET WWW_HOME http://info.cern.ch/junk.html
+
+</xmp>Beware of the fact that CMS puts everything into upper case.  It is
+not obvious how to get around this problem without writing a little
+REXX exec to do what you want.</p></nextid>

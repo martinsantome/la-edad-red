@@ -1,0 +1,19 @@
+<title>Internals -- /LineMode</title>
+<nextid 10="">
+<h1>Line Mode Browser Internals</h1>The <a name="9" href="Browser.html">line mode browser</a> uses the common code from the W3 browser <a name="6" href="../Architecture/BrowserOverview.html">architecture</a>
+and a few extra modules as follows
+<dl>
+<dt><a name="1" href="Implementation/HTBrowse.c/index.html">HTBrowse.c</a> , <a name="2" href="Implementation/HTBrowse.h/index.html">.h</a>
+<dd> is the <a name="7" href="../Architecture/BrowserOverview.html#16">main program</a> doing the  shell command analysis,
+prompts and command line handling etc.
+<dt><a name="3" href="Implementation/GridText.c/index.html">GridText.c</a> , <a name="4" href="Implementation/GridText.h/index.html">.h</a>
+<dd> is the <a name="8" href="../Architecture/BrowserOverview.html#12">hypertext object</a> . This assumes fixed-width
+characters (hence "grid").  This module has the basic functions of
+a hypertext object plus some extra interface to the HTBrowse.
+<dt><a name="5" href="Implementation/DefaultStyles.c/index.html">DefaultStyles.c</a>
+<dd> is the default set of formats for displaying text
+in each style.
+</dd></dt></dd></dt></dd></dt></dl>
+_________________________________________________________________
+<address><a name="0" href="../../TBL_Disclaimer.html">Tim BL</a>
+</address></nextid>
